@@ -65,6 +65,7 @@ requirements.txt:
     djangorestframework-simplejwt>=5.3
     channels>=4.0
     channels-redis>=4.1
+    daphne==4.2.1
 
 ------------------------------------------------------------------------
 
