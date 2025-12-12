@@ -88,7 +88,7 @@ Or via Docker:
 
 ### 4. Run server
 
-    python manage.py runserver
+    daphne -b 0.0.0.0 -p 8000 core.asgi:application
 
 ------------------------------------------------------------------------
 

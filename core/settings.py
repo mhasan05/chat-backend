@@ -26,7 +26,8 @@ SECRET_KEY = 'django-insecure-krk&0(qe9n8#4_9tk54+l006$d0ina$q2_evx(a+0(%00ek#v+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*", "localhost", "127.0.0.1"]
+
 
 
 # Application definition
@@ -153,3 +154,8 @@ SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=60),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
 }
+CSRF_TRUSTED_ORIGINS = [
+    "http://127.0.0.1:8006",
+    "http://127.0.0.1:8000",
+    "http://localhost:8006",
+]
