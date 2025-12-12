@@ -33,7 +33,6 @@ class JWTAuthMiddleware(BaseMiddleware):
                 )
                 user_id = decoded.get("user_id")
 
-                # 🟢 FIX: Use async ORM call
                 if user_id:
                     try:
                         user = await sync_to_async(User.objects.get)(id=user_id)
