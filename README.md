@@ -246,7 +246,7 @@ POST `/api/chats/{chat_id}/messages/`
 1.  Authenticate → store JWT\
 2.  List chats → `/api/chats/`\
 3.  Load chat messages → `/api/chats/{chat_id}/messages/`\
-4.  Open WebSocket `/ws/chat/{chat_id}//?token=Your_Token`\
+4.  Open WebSocket `/ws/chat/{chat_id}/?token=Your_Token`\
 5.  Send message via WS or HTTP\
 6.  Listen for incoming broadcast events
 
